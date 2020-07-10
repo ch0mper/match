@@ -1,6 +1,8 @@
 import React from 'react'
+import ApplicantDetails from './ApplicantDetails'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 import { reorder, move, getItemStyle, getListStyle } from '../functions/Drag'
+import Card from '@material-ui/core/Card'
 
 const Applicants = ({ applicants, setApplicants }) => {
   const onDragEnd = (result) => {
@@ -34,17 +36,26 @@ const Applicants = ({ applicants, setApplicants }) => {
   }
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
       <DragDropContext onDragEnd={onDragEnd}>
         {applicants.map((el, ind) => (
           <Droppable key={ind} droppableId={`${ind}`}>
             {(provided, snapshot) => (
-              <div
+              <Card
                 ref={provided.innerRef}
                 style={getListStyle(snapshot.isDraggingOver)}
                 {...provided.droppableProps}
               >
-                <div>{ind === 0 ? 'Applicants' : `Group ${ind}`}</div>
+                <div
+                  style={{
+                    marginBottom: 8,
+                    textAlign: 'center',
+                    fontSize: '1.2rem',
+                    fontWeight: 500,
+                  }}
+                >
+                  {ind === 0 ? 'Applicants' : `Group ${ind}`}
+                </div>
                 {el.map((item, index) => (
                   <Draggable key={item.id} draggableId={item.id} index={index}>
                     {(provided, snapshot) => (
@@ -57,21 +68,13 @@ const Applicants = ({ applicants, setApplicants }) => {
                           provided.draggableProps.style
                         )}
                       >
-                        <div
-                          style={{
-                            display: 'flex',
-                            justifyContent: 'space-around',
-                          }}
-                        >
-                          {item.content.name}
-                          {item.content.location}
-                        </div>
+                        <ApplicantDetails applicant={item.content} />
                       </div>
                     )}
                   </Draggable>
                 ))}
                 {provided.placeholder}
-              </div>
+              </Card>
             )}
           </Droppable>
         ))}
