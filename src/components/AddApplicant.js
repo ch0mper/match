@@ -1,30 +1,34 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from '../App'
+import React from 'react'
 
-const AddApplicant = () => {
-  const applicants = useContext(ThemeContext)
-
+const AddApplicant = ({
+  inputName,
+  setInputName,
+  inputLocation,
+  setInputLocation,
+  addApplicant,
+}) => {
   return (
-    <div>
-      <div>applicants</div>
-      <form>
-        <input />
-        <button
-          onClick={
-            () => console.log('clicked')
-            // add applicant to context
-          }
-        >
-          add
-        </button>
-      </form>
-      {applicants.map((applicant) => (
-        <div key={applicant.name} style={{ border: '1px solid black' }}>
-          {applicant.name}
-        </div>
-      ))}
-    </div>
+    <form style={{ display: 'flex', flexDirection: 'column', width: '16rem' }}>
+      <label>
+        Name:
+        <input
+          type='text'
+          name='name'
+          value={inputName}
+          onChange={(e) => setInputName(e.target.value)}
+        />
+      </label>
+      <label>
+        Location:
+        <input
+          type='text'
+          name='location'
+          value={inputLocation}
+          onChange={(e) => setInputLocation(e.target.value)}
+        />
+      </label>
+      <input type='button' value='Add new applicant' onClick={addApplicant} />
+    </form>
   )
 }
-
 export default AddApplicant
