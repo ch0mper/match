@@ -2,8 +2,6 @@
 
 a web app to allow a user to add applicant details to match into groups.
 
-***
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -32,8 +30,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - firebase deploy
 
 ## Features
-[ ] add an applicant
-[ ] drag n drop into groups
-[ ] collapsible details for applicants
-[ ] sort applicants by details
-[ ] enhance applicant details (photo, etc)
+- [ ] add an applicant
+- [ ] drag n drop into groups
+- [ ] collapsible details for applicants
+- [ ] sort applicants by details
+- [ ] enhance applicant details (photo, etc)
