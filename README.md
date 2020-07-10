@@ -30,8 +30,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - firebase deploy
 
 ## Features
-- [ ] add an applicant
-- [ ] drag n drop into groups
+- [x] add an applicant
+- [x] drag n drop into groups
 - [ ] collapsible details for applicants
+- [ ] form input validation
 - [ ] sort applicants by details
 - [ ] enhance applicant details (photo, etc)

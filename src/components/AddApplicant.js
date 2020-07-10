@@ -10,8 +10,8 @@ const AddApplicant = () => {
       <form>
         <input />
         <button
-          onClick={() =>
-            console.log('clicked')
+          onClick={
+            () => console.log('clicked')
             // add applicant to context
           }
         >
