@@ -18,11 +18,13 @@ const ApplicantDetails = ({ applicant }) => (
       </div>
     </AccordionSummary>
     <AccordionDetails style={{ flexDirection: 'column', marginTop: -8 }}>
-      <div>Location: {applicant.location}</div>
-      <div>Business: {applicant.businessName}</div>
-      <div>Revenue: ${applicant.revenue}</div>
-      <div>Industry: {applicant.industry}</div>
-      <div>No. of employees: {applicant.employees}</div>
+      <div style={{ paddingBottom: 4 }}>Location: {applicant.location}</div>
+      <div style={{ paddingBottom: 4 }}>Business: {applicant.businessName}</div>
+      <div style={{ paddingBottom: 4 }}>Revenue: ${applicant.revenue}</div>
+      <div style={{ paddingBottom: 4 }}>Industry: {applicant.industry}</div>
+      <div style={{ paddingBottom: 4 }}>
+        No. of employees: {applicant.employees}
+      </div>
       <div>{applicant.businessDescription}</div>
     </AccordionDetails>
   </Accordion>
