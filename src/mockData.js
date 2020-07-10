@@ -4,11 +4,12 @@ const initialApplicants = [
     content: {
       name: 'Hannah',
       location: 'Houston, TX',
-      businessName: 'hi',
+      businessName: 'biznamezname',
       revenue: 120000,
       industry: 'tech',
       employees: 0,
-      businessDescription: 'lorem ipsum',
+      businessDescription:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     },
   },
   {
@@ -16,11 +17,12 @@ const initialApplicants = [
     content: {
       name: 'Aeryk',
       location: 'Greenville, SC',
-      businessName: 'hi',
+      businessName: 'bizname',
       revenue: 120000,
       industry: 'tech',
       employees: 5,
-      businessDescription: 'lorem ipsum',
+      businessDescription:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     },
   },
   {
@@ -28,11 +30,12 @@ const initialApplicants = [
     content: {
       name: 'Jay',
       location: 'Greenville, SC',
-      businessName: 'hi',
+      businessName: 'bizname',
       revenue: 120000,
       industry: 'tech',
       employees: 30,
-      businessDescription: 'lorem ipsum',
+      businessDescription:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     },
   },
   {
@@ -40,11 +43,12 @@ const initialApplicants = [
     content: {
       name: 'Robert',
       location: 'Greenville, SC',
-      businessName: 'hi',
+      businessName: 'bizname',
       revenue: 120000,
       industry: 'tech',
       employees: 0,
-      businessDescription: 'lorem ipsum',
+      businessDescription:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     },
   },
   {
@@ -52,11 +56,12 @@ const initialApplicants = [
     content: {
       name: 'Maks',
       location: 'Harrisonburg, VA',
-      businessName: 'hi',
+      businessName: 'bizname',
       revenue: 120000,
       industry: 'tech',
       employees: 0,
-      businessDescription: 'lorem ipsum',
+      businessDescription:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     },
   },
 ]
