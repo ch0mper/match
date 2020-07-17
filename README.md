@@ -32,7 +32,7 @@ Launches the test runner in the interactive watch mode.
 - [x] drag n drop into groups
 - [x] collapsible details for applicants
 - [ ] form input type and validation
-- [ ] sort applicants by details
+- [x] sort applicants by details
 - [ ] enhance applicant details (photo, etc)
 - [ ] persist data
 - [ ] :bug: group should remain even without members
