@@ -6,7 +6,6 @@ import Button from '@material-ui/core/Button'
 
 const ApplicantsContainer = () => {
   const [applicants, setApplicants] = useState([initialApplicants])
-  console.log(applicants)
 
   const [open, setOpen] = useState(false)
   const handleOpenDialog = () => {

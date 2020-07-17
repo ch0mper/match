@@ -27,7 +27,6 @@ const ApplicantDetails = ({ applicant }) => (
       </div>
       <div>{applicant.businessDescription}</div>
     </AccordionDetails>
-    {/* <button></button> */}
   </Accordion>
 )
 
