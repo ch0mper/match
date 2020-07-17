@@ -15,10 +15,10 @@ const initialApplicants = [
   {
     id: '2',
     content: {
-      name: 'Aeryk',
+      name: 'Galen',
       location: 'Greenville, SC',
       businessName: 'bizname',
-      revenue: 120000,
+      revenue: 500000,
       industry: 'tech',
       employees: 5,
       businessDescription:
@@ -28,10 +28,10 @@ const initialApplicants = [
   {
     id: '3',
     content: {
-      name: 'Jay',
+      name: 'Chris',
       location: 'Greenville, SC',
       businessName: 'bizname',
-      revenue: 120000,
+      revenue: 800000,
       industry: 'tech',
       employees: 30,
       businessDescription:
@@ -41,10 +41,10 @@ const initialApplicants = [
   {
     id: '4',
     content: {
-      name: 'Robert',
+      name: 'Jen',
       location: 'Greenville, SC',
       businessName: 'bizname',
-      revenue: 120000,
+      revenue: 320000,
       industry: 'tech',
       employees: 0,
       businessDescription:
@@ -54,10 +54,10 @@ const initialApplicants = [
   {
     id: '5',
     content: {
-      name: 'Maks',
+      name: 'Chika',
       location: 'Harrisonburg, VA',
       businessName: 'bizname',
-      revenue: 120000,
+      revenue: 80000,
       industry: 'tech',
       employees: 0,
       businessDescription:

@@ -45,13 +45,30 @@ const ApplicantsContainer = () => {
     handleCloseDialog()
   }
 
+  const sortApplicants = (sortType) => {
+    let newArr = applicants[0].sort((a, b) => {
+      if (a.content[sortType] < b.content[sortType]) return -1
+      if (a.content[sortType] > b.content[sortType]) return 1
+      return 0
+    })
+
+    let groups = applicants.slice(1)
+    setApplicants([[...newArr], ...groups])
+  }
+
+  const buttonStyle = {
+    margin: 8,
+    marginTop: 0,
+    width: 172,
+  }
+
   return (
     <div style={{ background: 'papayawhip', padding: 16, minHeight: '92vh' }}>
       <div style={{ paddingBottom: 8 }}>
         <Button
           variant='contained'
           color='primary'
-          style={{ marginLeft: 8, marginRight: 8, width: 164 }}
+          style={buttonStyle}
           onClick={handleOpenDialog}
         >
           add applicant
@@ -66,7 +83,7 @@ const ApplicantsContainer = () => {
         <Button
           variant='contained'
           color='primary'
-          style={{ width: 164 }}
+          style={buttonStyle}
           onClick={() => {
             setApplicants([...applicants, []])
           }}
@@ -74,6 +91,17 @@ const ApplicantsContainer = () => {
           Add new group
         </Button>
       </div>
+
+      {['name', 'revenue'].map((sortType) => (
+        <Button
+          variant='outlined'
+          color='primary'
+          style={buttonStyle}
+          onClick={() => sortApplicants(sortType)}
+        >
+          sort by {sortType}
+        </Button>
+      ))}
 
       <Applicants applicants={applicants} setApplicants={setApplicants} />
     </div>

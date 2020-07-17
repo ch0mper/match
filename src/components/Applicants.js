@@ -6,13 +6,18 @@ import Card from '@material-ui/core/Card'
 
 const Applicants = ({ applicants, setApplicants }) => {
   const onDragEnd = (result) => {
-    const { source, destination } = result
+    const { draggableId, source, destination } = result
+
+    const sInd = +source.droppableId
 
     // dropped outside the list
     if (!destination) {
+      const newState = [...applicants]
+      newState[sInd] = newState[sInd].filter((e) => e.id !== draggableId)
+      setApplicants(newState)
       return
     }
-    const sInd = +source.droppableId
+
     const dInd = +destination.droppableId
 
     if (sInd === dInd) {
